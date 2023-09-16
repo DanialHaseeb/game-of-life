@@ -9,26 +9,6 @@ This repository features an implementation of Conway's Game of Life, a cellular 
 - C Compiler (gcc, clang)
 - [Raylib](https://www.raylib.com/)
 
-## How to Compile and Run
-
-1. Make sure you have Raylib installed on your system.
-2. Clone the repository.
-    ```bash
-    git clone https://github.com/yourusername/ConwayGameOfLife_Raylib_C.git
-    ```
-3. Navigate to the project directory.
-    ```bash
-    cd ConwayGameOfLife_Raylib_C
-    ```
-4. Compile the program.
-    ```bash
-    gcc -o game_of_life main.c -lraylib
-    ```
-5. Run the program.
-    ```bash
-    ./game_of_life
-    ```
-
 ## Usage
 
 - The simulation starts as soon as you run the program.
