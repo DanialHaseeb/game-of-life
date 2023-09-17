@@ -22,6 +22,7 @@ void setup()
 int countNeighbors(int x, int y)
 {
 	int count = 0;
+	
 	for (int i = -1; i <= 1; ++i)
 	{
 		for (int j = -1; j <= 1; ++j)
@@ -31,6 +32,7 @@ int countNeighbors(int x, int y)
 			count += grid[row][col];
 		}
 	}
+	
 	return count - grid[x][y];
 }
 
@@ -50,7 +52,7 @@ void update()
 	for (int i = 0; i < rows; ++i)
 	{
 		for (int j = 0; j < cols; ++j)
-        { grid[i][j] = newGrid[i][j]; }
+    { grid[i][j] = newGrid[i][j]; }
 	}
 }
 
@@ -61,7 +63,7 @@ void draw()
 		for (int j = 0; j < cols; ++j)
 		{
 			if (grid[i][j])
-            { DrawRectangle(j * cellSize, i * cellSize, cellSize, cellSize, WHITE); }
+      { DrawRectangle(j * cellSize, i * cellSize, cellSize, cellSize, WHITE); }
 		}
 	}
 }
@@ -75,7 +77,7 @@ int main()
 
 	while (!WindowShouldClose())
 	{
-	    BeginDrawing();
+	  BeginDrawing();
 		ClearBackground(BLACK);
 
 		draw();
